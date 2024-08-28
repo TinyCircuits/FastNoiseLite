@@ -1551,7 +1551,7 @@ static float _fnlSingleCellular3D(fnl_state *state, int seed, FNLfloat x, FNLflo
 
             for (int yi = yr - 1; yi <= yr + 1; yi++)
             {
-                int zPrimed = zPrimedBase;
+                volatile int zPrimed = zPrimedBase;
 
                 for (int zi = zr - 1; zi <= zr + 1; zi++)
                 {
@@ -1584,7 +1584,7 @@ static float _fnlSingleCellular3D(fnl_state *state, int seed, FNLfloat x, FNLflo
 
             for (int yi = yr - 1; yi <= yr + 1; yi++)
             {
-                int zPrimed = zPrimedBase;
+                volatile int zPrimed = zPrimedBase;
 
                 for (int zi = zr - 1; zi <= zr + 1; zi++)
                 {
@@ -1617,7 +1617,7 @@ static float _fnlSingleCellular3D(fnl_state *state, int seed, FNLfloat x, FNLflo
 
             for (int yi = yr - 1; yi <= yr + 1; yi++)
             {
-                int zPrimed = zPrimedBase;
+                volatile int zPrimed = zPrimedBase;
 
                 for (int zi = zr - 1; zi <= zr + 1; zi++)
                 {
